@@ -1,0 +1,103 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+.Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  background: #fff;
+  z-index: 1000;
+
+  height: 72px;
+  display: flex;
+  align-items: center;
+
+  padding: 0 2rem;
+
+}
+
+
+.Header nav {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  justify-content: flex-start;
+  gap: 1.75rem;
+
+  flex-wrap: wrap;
+}
+
+.Header nav a {
+  color: #666;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+
+  padding: 0.25rem 0;
+
+  white-space: nowrap; 
+}
+
+.Header nav a:hover {
+  color: #000;
+}
+
+
+.Header nav a:first-child {
+  color: #000;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+
+  margin-right: auto;
+}
+
+.mobileView {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .Header {
+    padding: 0 1rem;
+    height: auto;            
+    align-items: flex-start; 
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .mobileView {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 18px;
+  }
+
+  .mobileView button {
+    width: 36px;
+    height: 36px;
+    border: 1px solid #e5e7eb;
+    background: transparent;
+    border-radius: 8px;
+  }
+
+  .Header nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding-top: 1rem;
+  }
+
+  .Header nav.hidden {
+    display: none;
+  }
+
+  .Header nav a:first-child {
+    margin-right: 0;
+  }
+}

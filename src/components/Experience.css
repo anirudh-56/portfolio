@@ -1,0 +1,287 @@
+.experienceSection {
+  padding: 0;
+  max-width: none;
+  margin: 0;
+}
+
+.experienceLayout {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  gap: 18px;
+}
+
+.experienceTabs {
+  width: 280px;
+  min-width: 280px;
+  border-right: 1px solid rgba(0, 0, 0, 0.10);
+  padding-right: 14px;
+}
+
+.experienceTabs .MuiTabs-root {
+  width: 100%;
+}
+
+
+.experienceTabs .MuiTab-root {
+  align-items: flex-start;
+  text-align: left;
+  text-transform: none;
+  line-height: 1.15;
+
+  padding: 10px 10px;
+  min-height: auto;
+  border-radius: 10px;
+
+  color: rgba(0, 0, 0, 0.55);
+  font-weight: 700;
+
+  transition: background 160ms ease, color 160ms ease;
+}
+
+.experienceTabs .MuiTab-root:hover {
+  background: rgba(0, 0, 0, 0.04);
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.experienceTabs .MuiTab-root.Mui-selected {
+  background: rgba(0, 120, 255, 0.10);
+  color: rgba(0, 0, 0, 0.90);
+}
+
+.experienceTabs .MuiTabs-indicator {
+  background: #090d18;
+  width: 3px;
+  border-radius: 999px;
+}
+
+.experiencePanel {
+  flex: 1;
+  border-radius: 18px;
+  padding: 26px 28px;
+  background: linear-gradient(180deg, #0b1220, #020617);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+  transition: all 240ms ease;
+}
+
+.experiencePanelFixed {
+  height: 360px;
+  max-height: 360px;
+  overflow: auto;
+
+  padding: 18px;
+
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+
+  background: #0b0f1a;
+  color: rgba(255, 255, 255, 0.86);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+.experiencePanelFixed p {
+  margin: 0 0 12px;
+  line-height: 1.65;
+  font-size: 0.98rem;
+}
+
+
+.xpMeta {
+  color: rgba(255, 255, 255, 0.62);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+
+.xpSummary {
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.90);
+  margin-bottom: 14px;
+}
+
+
+.xpTasks {
+  margin: 0 0 16px;
+  padding-left: 18px; 
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.xpTasks li {
+  margin: 8px 0;
+}
+
+.xpImpactBox {
+  margin-top: 8px;
+  padding: 14px 14px;
+
+  border-radius: 14px;
+  border: 1px solid rgba(34, 197, 94, 0.35); 
+  background: rgba(34, 197, 94, 0.08);
+}
+
+.xpImpactLabel {
+  display: block;
+  font-weight: 800;
+  color: rgba(34, 197, 94, 0.95);
+  margin-bottom: 6px;
+}
+
+.xpImpactText {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+
+.xpTech {
+  margin-top: 14px;
+}
+
+.xpTechTitle {
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.72);
+  margin-bottom: 10px;
+}
+
+.xpTechChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.xpChip {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 6px 10px;
+  border-radius: 999px;
+
+  font-size: 0.9rem;
+  font-weight: 700;
+
+  color: rgba(255, 255, 255, 0.88);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(34, 197, 94, 0.35);
+}
+
+.tabRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.tabLogo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: white;
+  padding: 4px;
+  flex-shrink: 0;
+}
+
+
+.experiencePanelFixed::-webkit-scrollbar {
+  width: 10px;
+}
+.experiencePanelFixed::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+}
+.experiencePanelFixed::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.20);
+}
+
+@media (max-width: 900px) {
+  .experienceLayout {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .experienceTabs {
+    width: 100%;
+    min-width: 0;
+    border-right: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+    padding-right: 0;
+    padding-bottom: 12px;
+  }
+
+  .experiencePanelFixed {
+    height: auto;
+    max-height: none;
+  }
+}
+
+
+.tabText {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+
+.tabOrg {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.92);
+  line-height: 1.2;
+}
+
+.tabRole {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.55);
+  line-height: 1.2;
+}
+
+.experienceSection {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.xpHeaderRow {
+  margin-bottom: 10px;
+}
+
+.xpCompanyLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 6px 12px;
+  border-radius: 10px;
+
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: #2563eb; 
+  border: 1px solid rgba(37, 99, 235, 0.5);
+  background: rgba(37, 99, 235, 0.08);
+
+  text-decoration: none;
+  transition: all 160ms ease;
+}
+
+.xpCompanyLink:hover {
+  background: rgba(37, 99, 235, 0.15);
+  border-color: rgba(37, 99, 235, 0.8);
+}
+
+.xpExternalIcon {
+  font-size: 0.9em;
+  line-height: 1;
+}
+
+.xpHeaderRow {
+  display: flex;
+  gap: 12px;
+}
+
+.sectionTitle {
+  text-align: left !important;
+}

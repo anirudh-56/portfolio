@@ -1,0 +1,98 @@
+.Profile {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  padding: 96px 24px 64px;
+
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.Profile .left h1 {
+  font-size: 44px;
+  line-height: 1.1;
+  margin: 0 0 12px;
+}
+
+.Profile .left h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 18px;
+  color: #374151;
+}
+
+.Profile .left p {
+  margin: 0 0 20px;
+  color: #4b5563;
+  line-height: 1.6;
+  max-width: 58ch; 
+}
+
+.Profile .right {
+  display: flex;
+  justify-content: center;
+}
+
+.Profile .right img {
+  width: 360px;
+  height: 420px;
+  object-fit: cover;
+
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+  background: #f3f4f6;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 18px;
+  border-radius: 8px;
+
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background: #090d18;     
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #020617;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #0f172a;
+  border: 1px solid #e5e7eb;
+}
+
+.btn-secondary:hover {
+  background: #f8fafc;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;      
+  margin-top: 16px;
+}
+
+.Projects {
+  max-width: 1100px; 
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+.Projects h1 {
+  margin-top: 0;
+  margin-bottom: 48px;
+}
+
