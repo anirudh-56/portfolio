@@ -47,8 +47,13 @@ const Bottom = () => {
                     className={`${toggleMenu ? "flex": "hidden sm: flex"} 
                     justify-center items-center gap-3 sm:gap-5 lg:gap-10 sm:flex-row flex-col mt-2 sm:mt-0`}
                 >
-                <i class="fa fa-linkedin-square"></i>
-                <i class="fa fa-github"></i>
+                <a href="www.linkedin.com/in/ayswe" target="_blank" rel="noreferrer">
+                    <i class="fa fa-linkedin-square"></i>
+                </a>
+
+                <a href="https://github.com/anirudh-56" target="_blank" rel="noreferrer">
+                    <i class="fa fa-github"></i>
+                </a>  
                 {
                     menus.map((menu, i) => {
                         return (

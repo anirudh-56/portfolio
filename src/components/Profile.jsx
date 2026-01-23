@@ -42,7 +42,7 @@ const Profile = () => {
                         Github
                     </MyLinkButton>
 
-                    <MyLinkButton href="https://github.com/anirudh-56" variant="btn-secondary">
+                    <MyLinkButton href="/AnirudhYallapragadaResume.pdf" variant="btn-secondary">
                         Download Resume
                     </MyLinkButton>
                 </div>
