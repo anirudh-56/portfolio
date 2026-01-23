@@ -1,5 +1,3 @@
-import {useEffect, useState, useRef} from 'react';
-
 import './Profile.css'
 
 const Profile = () => {

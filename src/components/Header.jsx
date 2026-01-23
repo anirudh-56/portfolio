@@ -2,7 +2,7 @@
 
 import './Header.css'
 
-import {useEffect, useState, useRef} from 'react';
+import {useEffect, useState} from 'react';
 
 const menus = ["Anirudh Yallapragada", "Home", "Experiences", "Projects"]
 
@@ -32,7 +32,7 @@ const Header = () => {
         });
 
         return () => observer.disconnect();
-    }, [menus])
+    }, [])
 
     return (
         <header className="Header">

@@ -1,4 +1,4 @@
-import {useEffect, useState} from 'react';
+import {useState} from 'react';
 import { Box, Stack, Tabs, Tab } from "@mui/material";
 import './Experience.css'
 

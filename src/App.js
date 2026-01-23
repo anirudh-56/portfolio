@@ -1,5 +1,3 @@
-import {useEffect, useState, useRef} from 'react';
-import { useNavigate } from "react-router-dom";
 import  Header  from './components/Header.jsx';
 import  Profile  from './components/Profile.jsx';
 import  Experience  from './components/Experience.jsx';
