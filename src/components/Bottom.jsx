@@ -5,7 +5,6 @@ import {useEffect, useState, useRef} from 'react';
 const menus = ["Anirudh Yallapragada", "Home", "Experiences", "Projects"]
 
 
-
 const Bottom = () => {
      const [activeSection, setActiveSection] = useState(null);
         const [toggleMenu, setToggleMenu] = useState(false);
